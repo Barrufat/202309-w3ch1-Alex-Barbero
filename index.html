@@ -6,6 +6,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="js/validate.js" defer></script>
   <script src="js/index.js" defer></script>
@@ -13,36 +16,42 @@
 </head>
 
 <body>
-  <header class="header">
+  <div class="container">
     <h1>Formulario email</h1>
-  </header>
-  <main class="main">
-    <form class="form">
-      <div class="emails-box">
-        <label> Remitente:
-          <input class="input" type="email">
+    <main class="main">
+      <form class="form">
+        <div class="emails-box">
+          <label> Remitente:
+            <input class="input" type="email" id="remitent">
+          </label>
+          <label> Destinatario:
+            <input class="input" type="email" id="destinator">
+          </label>
+        </div>
+        <label> Asunto:
+          <input class="input" type="text" id="issue">
         </label>
-        <label> Destinatario:
-          <input class="input" type="email">
+        <label class="label-column"> Descripción:
+          <textarea class="text-box" id="description"></textarea>
         </label>
-      </div>
-      <label> Asunto:
-        <input class="input" type="text">
-      </label>
-      <label class="label-column"> Descripción:
-        <textarea class="text-box"></textarea>
-      </label>
-      <div class="check-box">
-        <label class="label">Programar envío
-          <input class="input" type="checkbox" />
+        <label> Archivo:
+          <input class="input file" type="file">
         </label>
-      </div>
-      <label class="label off"> Fecha y hora para enviar:
-        <input class="input" type="date">
-      </label>
-    </form>
-  </main>
+        <div class="check-box">
+          <label class="label">Programar envío
+            <input class="input" type="checkbox" id="program" />
+          </label>
+        </div>
+        <label class="label off" id="date-label"> Fecha y hora para enviar:
+          <input class="input" type="date" id="date">
+        </label>
+        <div class="submit-container">
+          <button class="submit-button" type="submit">Enviar</button>
+        </div>
+      </form>
 
+    </main>
+  </div>
 </body>
 
 </html>
