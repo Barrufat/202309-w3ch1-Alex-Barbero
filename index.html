@@ -1,22 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta name="description" content="Formulario email">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-  <title>Document</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="js/validate.js" defer></script>
+  <script src="js/index.js" defer></script>
+  <title>Email</title>
 </head>
 
 <body>
-  <header>
+  <header class="header">
     <h1>Formulario email</h1>
   </header>
-  <main>
-    <form>
-      <label> Remitente:
-        <input type="email">
+  <main class="main">
+    <form class="form">
+      <div class="emails-box">
+        <label> Remitente:
+          <input class="input" type="email">
+        </label>
+        <label> Destinatario:
+          <input class="input" type="email">
+        </label>
+      </div>
+      <label> Asunto:
+        <input class="input" type="text">
+      </label>
+      <label class="label-column"> Descripción:
+        <textarea class="text-box"></textarea>
+      </label>
+      <div class="check-box">
+        <label class="label">Programar envío
+          <input class="input" type="checkbox" />
+        </label>
+      </div>
+      <label class="label off"> Fecha y hora para enviar:
+        <input class="input" type="date">
       </label>
     </form>
   </main>
