@@ -2,13 +2,17 @@
   box-sizing: border-box;
 }
 
+html {
+  font-family: "Dela Gothic One", cursive;
+  color: rgb(13, 38, 54);
+}
+
 h1,
 label,
 textarea,
 body {
   margin: 0;
-  font-family: "Dela Gothic One", cursive;
-  color: rgb(13, 38, 54);
+  font: inherit;
 }
 
 body {
@@ -60,7 +64,8 @@ h1 {
   position: relative;
   padding: 30px;
   border-radius: 20px;
-  background-color: rgba(37, 117, 170, 0.568);
+  /* background-color: rgba(37, 117, 170, 0.568); */
+  background-color: rgba(245, 245, 245, 0.63);
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -124,9 +129,10 @@ input {
   background: whitesmoke;
   color: rgb(37, 117, 170);
   border-radius: 20px;
-  padding: 5px;
+  padding: 12px;
   border: none;
-  font-family: "Dela Gothic One", cursive;
+  font-family: inherit;
+  font-size: larger;
 }
 
 .submit-button:hover {

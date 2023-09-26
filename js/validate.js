@@ -14,6 +14,10 @@ let description;
 let program;
 let date;
 
+remitentInputElement.addEventListener("input", (event) => {
+  console.log(event.target.value);
+});
+
 formBox.addEventListener("input", (event) => {
   switch (event.target) {
     case remitentInputElement:
@@ -76,7 +80,7 @@ const validateForm = () => {
         console.log("El texto es demasiado corto");
       }
     } else {
-      ("El remitente y destinatario deben contener . y @ ");
+      console.log("El remitente y destinatario deben contener . y @ ");
     }
   } else {
     console.log("Rellena todos los campos correctamente");
